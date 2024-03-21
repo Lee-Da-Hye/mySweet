@@ -78,10 +78,7 @@ body{background-color: #f0f0f0;}
 
 /*slogon*/
 .slogon_wrap{position: relative;}
-.slogon{text-align: left;
-      color: #fff;
-      position: absolute;
-      left: 113px;}
+.slogon{text-align: left;color: #fff;position: absolute;left: 113px;}
 .slogon_title{position: relative;top:100px;opacity: 0}
 .slogon_title span:nth-child(1){font-size: 68px;}
 .slogon_title span:nth-child(2){display: block; font-size:24px;letter-spacing: -2px;margin-top: 58px}
@@ -116,13 +113,8 @@ body{background-color: #f0f0f0;}
           transform: translateX(50%);
       }
   }
-  .slideInFromLeftAnimation {
-      animation: slideInFromLeft 1s ease forwards;
-    }
-    
-    .slideInFromRightAnimation {
-      animation: slideInFromRight 1s ease forwards;
-    }
+.section2.active .slideInFromLeftAnimation {animation: slideInFromLeft 1s ease forwards;}
+.section2.active .slideInFromRightAnimation {animation: slideInFromRight 1s ease forwards;}
 .section2 .brand > li > a{display: flex; width: 300px; flex-direction: column; align-items: center; box-shadow: 0px 0px 3px #c7c7c7ad; padding-top: 20px;}
 .section2 .brand1 a,.section2 .brand3  a{ background-color: #fff; }
 .section2 .brand2 > a{background-color: #0d1d2e; }
@@ -132,186 +124,43 @@ body{background-color: #f0f0f0;}
 .section2 .brand > li > a > span{font-size: 23px;display: flex; color: #000;}
 
 /*secction3*/
-.rental{
-      position: absolute;
-      top: 182px;
-      left: 142px;
-}
-.rental-small-title{
-      display: block;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1.076923076923077;
-      letter-spacing: -0.01px;
-      color: #A0A0A0;
-      margin-bottom: 40px;
-}
-.rental-title{
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 1.216666666666667;
-      letter-spacing: 0;
-      color: #000;
-      margin-bottom: 20px;
-}
-.rental-des{
-      font-size: 22px;
-      font-weight: 500;
-      line-height: 1.454545454545455;
-      letter-spacing: -0.01px;
-      color: #2B292D;
-      margin-bottom: 40px;
-}
-.rental-button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 292px;
-      height: 56px;
-      border-radius: 2px;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.555555555555556;
-      letter-spacing: -0.05px;
-      color: #fff;
-      background-color: #526580;
-}
-.rental-button:hover{
-      color: #fff;
-      background-color: #2A4060;
-}
-.card {
-      display: flex;
-      justify-content: flex-end;
-      color: #fff;
-      cursor: pointer;
-}
-.card1 {
-      position: absolute;
-      top: 20%;
-      right: 35%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border-radius: 20px;
-      transition: top 0.3s ease, right 0.3s ease;
-}
-.card1:hover {
-      top: 20%;
-      right: 35%;
-      background-color: #2A4060;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.card1-background{
-      background: url(../images/rental-info/hunters-race-MYbhN8KaaEc-unsplash.jpg) no-repeat center;
-      background-size: cover;
-      border-radius: 20px;
-      padding: 86px 38px 70px;
-}
-.card1-background:hover{
-      background: none;
-}
-.card-title {
-      margin-bottom: 20px;
-      font-size: 32px;
-      font-weight: 600;
-      line-height: 1;
-      letter-spacing: -0.01em;
-}
-.card-des {
-      margin-bottom: 40px;
-      font-size: 22px;
-      font-weight: 500;
-      line-height: 1.454545454545455;
-      letter-spacing: -0.01em;
-}
-.card-add {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.388888888888889;
-      letter-spacing: -0.02em;
-}
+.rental{position: absolute;top: 182px;left: 142px;}
+.rental-small-title{display: block;font-size: 26px;font-weight: 700;line-height: 1.076923076923077;letter-spacing: -0.01px;color: #A0A0A0;margin-bottom: 40px;}
+.rental-title{font-size: 48px;font-weight: 700;line-height: 1.216666666666667;letter-spacing: 0;color: #000;margin-bottom: 20px;}
+.rental-des{font-size: 22px;font-weight: 500;line-height: 1.454545454545455;letter-spacing: -0.01px;color: #2B292D;margin-bottom: 40px;}
+.rental-button{display: flex;justify-content: center;align-items: center;width: 292px;height: 56px;border-radius: 2px;font-size: 18px;font-weight: 700;line-height: 1.555555555555556;letter-spacing: -0.05px;color: #fff;background-color: #526580;}
+.rental-button:hover{color: #fff;background-color: #2A4060;}
+.card {display: flex;justify-content: flex-end;color: #fff;cursor: pointer;}
+.card1 {position: absolute;top: 20%;right: 35%;display: flex;flex-direction: column;justify-content: center;border-radius: 20px;transition: top 0.3s ease, right 0.3s ease;}
+.card1:hover {top: 20%;right: 35%;background-color: #2A4060;box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);}
+.card1-background{background: url(../images/rental-info/hunters-race-MYbhN8KaaEc-unsplash.jpg) no-repeat center;background-size: cover;border-radius: 20px;padding: 86px 38px 70px;}
+.card1-background:hover{background: none;}
+.card-title {margin-bottom: 20px;font-size: 32px;font-weight: 600;line-height: 1;letter-spacing: -0.01em;}
+.card-des {margin-bottom: 40px;font-size: 22px;font-weight: 500;line-height: 1.454545454545455;letter-spacing: -0.01em;}
+.card-add {font-size: 18px;font-weight: 500;line-height: 1.388888888888889;letter-spacing: -0.02em}
 .card-title,
 .card-des,
-.card-add {
-      opacity: 0;
-      transition: opacity 0.5s ease-in;
-}
-.card1:hover .card-title {
-      opacity: 1;
-      transition-delay: 0.3s;
-}
+.card-add {opacity: 0;transition: opacity 0.5s ease-in;}
+.card1:hover .card-title {opacity: 1;transition-delay: 0.3s;}
 
-.card1:hover .card-des {
-      opacity: 1;
-      transition-delay: 0.4s;
-}
+.card1:hover .card-des {opacity: 1;transition-delay: 0.4s;}
 
-.card1:hover .card-add {
-      opacity: 1;
-      transition-delay: 0.5s;
-}
-.card2 {
-      position: absolute;
-      top: 30%;
-      right: 11%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border-radius: 20px;
-      transition: top 0.3s ease, right 0.3s ease;
-}
-.card2:hover {
-      top: 30%;
-      right: 11%;
-      background-color: #2A4060;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.card2-background{
-      background: url(../images/rental-info/131449054_l.jpg) no-repeat center;
-      background-size: cover;
-      border-radius: 20px;
-      padding: 86px 38px 70px;
-}
-.card2-background:hover{
-      background: none;
-}
-.card2:hover .card-title {
-      opacity: 1;
-      transition-delay: 0.3s;
-}
-.card2:hover .card-des {
-      opacity: 1;
-      transition-delay: 0.4s;
-}
-.card2:hover .card-add {
-      opacity: 1;
-      transition-delay: 0.5s;
-}
+.card1:hover .card-add {opacity: 1;transition-delay: 0.5s;}
+.card2 {position: absolute;top: 30%;right: 11%;display: flex;flex-direction: column;justify-content: center;border-radius: 20px;transition: top 0.3s ease, right 0.3s ease;}
+.card2:hover {top: 30%;right: 11%;background-color: #2A4060;box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);}
+.card2-background{background: url(../images/rental-info/131449054_l.jpg) no-repeat center;background-size: cover;border-radius: 20px;padding: 86px 38px 70px;}
+.card2-background:hover{background: none;}
+.card2:hover .card-title {opacity: 1;transition-delay: 0.3s;}
+.card2:hover .card-des {opacity: 1;transition-delay: 0.4s;}
+.card2:hover .card-add {opacity: 1;transition-delay: 0.5s;}
 .rental-small-title,
 .rental-title,
 .rental-des,
-.rental-button {
-  opacity: 0; 
-  transform: translateY(-20px); 
-}
-
-.section3 .rental-small-title {
-  animation: fadeInUp 0.8s forwards 0.4s; 
-}
-
-.section3 .rental-title {
-  animation: fadeInUp 0.8s forwards 0.8s; 
-}
-
-.section3 .rental-des {
-  animation: fadeInUp 0.8s forwards 0.8s; 
-}
-
-.section3 .rental-button {
-  animation: fadeInUp 0.8s forwards 1.2s; 
-}
-
+.rental-button {opacity: 0; transform: translateY(-20px); }
+.section3.active .rental-small-title {animation: fadeInUp 0.8s forwards 0.4s;}
+.section3.active .rental-title { animation: fadeInUp 0.8s forwards 0.8s;}
+.section3.active .rental-des {animation: fadeInUp 0.8s forwards 0.8s;}
+.section3.active .rental-button {animation: fadeInUp 0.8s forwards 1.2s;}
 @keyframes fadeInUp {
   from {
     opacity: 0;

@@ -1,6 +1,36 @@
 $(document).ready(function(){
-  //섹션 1의 슬라이더 bxslider
 
+    // fullpagel
+
+    $('#fullpage').fullpage({
+      licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+      menu: '#left_nav',
+      slidesNavigation: true,
+      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'lastPage'],
+  
+      afterRender: function () {
+          $('.slogon_title').delay(200).animate({ top: '50px', opacity: 1 }, 800)
+          $('.slogon_txt').delay(1200).animate({ top: '50px', opacity: 1 }, 800)
+      },
+      afterLoad: function (origin, destination, direction) {
+        if (destination.index == 1 && origin.index !== 1) { // 두 번째 섹션에 도달했을 때 (첫 번째 섹션이 아닌 경우)
+          animateBrands(); // 애니메이션을 실행하는 함수 호출
+        }
+        if (destination.index == 2 || destination.index == 3 || destination.index == 5 || destination.index == 7 || destination.index == 4 || destination.index == 1 || destination.index == 6) {
+            $('.header').removeClass('up');
+        } else if (destination.index == 0) {
+            $('.header').addClass('up');
+        }
+  
+        //1,3번 섹션의 내용 보이게 하기
+        if (destination.index == 1) {
+            $('.section2 .inner').animate({ paddingTop: '100px', opacity: 1 })
+        } else if (destination.index == 3) {
+            $('.section4 .inner').animate({ paddingTop: '100px', opacity: 1 })
+        }
+    }//end: afterLoad 콜백
+  });//end fullpage
+  //섹션 1의 슬라이더 bxslider
   $(".slider1").bxSlider({
     auto: true,
     mode:'fade',
@@ -27,36 +57,7 @@ $(document).ready(function(){
   $('.slider1 img').width(winWidth+(winWidth*0.3));
   $('.slider1 img').height(winHeight+(winHeight*0.3));
 
-  // fullpagel
 
-  $('#fullpage').fullpage({
-    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-    menu: '#left_nav',
-    slidesNavigation: true,
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'lastPage'],
-
-    afterRender: function () {
-        $('.slogon_title').delay(200).animate({ top: '50px', opacity: 1 }, 800)
-        $('.slogon_txt').delay(1200).animate({ top: '50px', opacity: 1 }, 800)
-    },
-    afterLoad: function (origin, destination, direction) {
-      if (destination.index == 1 && origin.index !== 1) { // 두 번째 섹션에 도달했을 때 (첫 번째 섹션이 아닌 경우)
-        animateBrands(); // 애니메이션을 실행하는 함수 호출
-      }
-      if (destination.index == 2 || destination.index == 3 || destination.index == 5 || destination.index == 7 || destination.index == 4 || destination.index == 1 || destination.index == 6) {
-          $('.header').removeClass('up');
-      } else if (destination.index == 0) {
-          $('.header').addClass('up');
-      }
-
-      //1,3번 섹션의 내용 보이게 하기
-      if (destination.index == 1) {
-          $('.section2 .inner').animate({ paddingTop: '100px', opacity: 1 })
-      } else if (destination.index == 3) {
-          $('.section4 .inner').animate({ paddingTop: '100px', opacity: 1 })
-      }
-  }//end: afterLoad 콜백
-});//end fullpage
 
 
 
@@ -266,3 +267,4 @@ function animateBrands() {
 
   isAnimated = true;
 }
+
