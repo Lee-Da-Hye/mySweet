@@ -208,10 +208,10 @@ menuBtn.addEventListener('click', function(){
     sidebar.style.right = '0';
     sidebarOpen = true;
     quickMenu.style.transition = 'right 0.5s ease'; // 퀵 메뉴의 이동에 대한 transition 추가
-    quickMenu.style.right = '260px'; // 퀵 메뉴를 사이드바가 열린 위치로 이동
+    quickMenu.style.right = '190px'; // 퀵 메뉴를 사이드바가 열린 위치로 이동
   } else {
     // 사이드바가 열려 있는 경우
-    sidebar.style.right = '-200px';
+    sidebar.style.right = '-170px';
     sidebarOpen = false;
     quickMenu.style.transition = 'right 0.5s ease'; // 퀵 메뉴의 이동에 대한 transition 추가
     quickMenu.style.right = '60px'; // 퀵 메뉴를 사이드바가 닫힌 위치로 이동

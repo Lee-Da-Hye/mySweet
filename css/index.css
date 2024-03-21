@@ -125,7 +125,7 @@ body{background: #fff}
     }
 .section2 .brand > li > a{display: flex; width: 300px; flex-direction: column; align-items: center; box-shadow: 0px 0px 3px #c7c7c7ad; padding-top: 20px;}
 .section2 .brand1 a,.section2 .brand3  a{ background-color: #fff; }
-.section2 .brand2 > a{background-color: #0468BE; }
+.section2 .brand2 > a{background-color: #0d1d2e; }
 .section2 .brand2 .brand2-white{color: #fff;}
 .section2 .brandImg{width: 100px; height: 100px; justify-content: center; align-items: center; }
 .section2 .brandImg img{width: 100%;}
@@ -563,24 +563,24 @@ left: 20px; top: -2px; color: #afafaf; text-align: left;font-weight: bold}
 
 /* quick-menu */
 .container{ cursor: pointer;}
-.quick-menu{position: fixed; bottom: 10%;right: 3%;background-color: #d4d4d4c3;border-radius: 20px;transition: right  0.5s ease; background: url(../images/main/pajamas_location.svg) no-repeat center; width: 40px; height: 40px; background-color: #071D2F;;}
+.quick-menu{position: fixed; right: 3%;border-radius: 20px;transition: right  0.5s ease; bottom: 5%; }
 .quick-menu:hover ul{opacity: 1;}
-.quick-menu ul {opacity: 0; transition: 0.5s;}
+.quick-menu ul {}
 .quick-menu ul li button,
 .quick-menu ul li a
-{cursor: pointer;display: block;border: none;width: 40px;height: 40px;border-radius: 50%;background-color: #071D2F;color: #fff;text-decoration: none;display: flex;justify-content: center;align-items: center;font-size: 10px;}
-.quick-menu ul li button.right-menu{position: absolute;right: 160%;bottom: -70%;}
-.quick-menu ul li a.top{position: absolute;right: 120%;
-bottom: 45%;}
-.quick-menu ul li a.right-shop{position: absolute;     bottom: 140%;right: 45%;}
-.quick-menu ul li a.right-insta{position:absolute;left: 70%;bottom: 190%;}
+{cursor: pointer;display: block;border: none;width: 60px;height:60px;border-radius: 50%;background-color: #071D2F;color: #fff;text-decoration: none;display: flex;justify-content: center;align-items: center;font-size: 14px; margin-bottom: 10px;}
+.quick-menu ul li button.right-menu{}
+.quick-menu ul li a.top{
+}
+.quick-menu ul li a.right-shop{}
 .sidebar.active {
   right: 0; /* 사이드바가 열릴 때 transition을 사용하여 오른쪽으로 이동하도록 설정 */
+  
 }
-.sidebar{background-color: #ffffff;width: 200px;height: 100vh;position: fixed;right: -200px; transition: right 0.5s ease;top: 0;color: #fff; z-index: 999999; /*overflow: auto;*/}
+.sidebar{background-color: #ffffff;width: 170px;height: 100vh;position: fixed;right: -200px; transition: right 0.5s ease;top: 0;color: #fff; z-index: 999999; /*overflow: auto;*/ box-shadow: 0px 0px 5px #00000042;}
 .sidebar-contents{width: 80%; margin: auto; }
 .sidebar  h2{text-align: center; margin: 10px 0px 10px 0px; color: #000;}
-.sidebar .menu a {width: 140px;padding: 10px;background-color: #fff;display: block;text-align: center; color: #000;}
+.sidebar .menu a {width: 120px;padding: 10px;background-color: #fff;display: block;text-align: center; color: #000;}
 .sidebar .menu > li {margin-bottom: 10px;}
 .sidebar .menu > li > a{  border: 1px solid #000;}
 .sidebar .menu .bgblack{background-color: #000; color: #fff;}
