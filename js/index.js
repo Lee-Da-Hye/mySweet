@@ -115,10 +115,10 @@ $(document).ready(function(){
     pager: false,
   });
 
-// 섹션6 슬라이드 대여서비스 swiper 슬라이더
+// 섹션5 슬라이드 대여서비스 swiper 슬라이더
 var swiper = new Swiper(".rental-method-Swiper", {
   slidesPerView: "auto",
-  spaceBetween: 80,
+  spaceBetween: 50,
   autoplay:true,
   delay:5000,
   disableOnInteraction: false,
