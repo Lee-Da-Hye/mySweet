@@ -562,12 +562,18 @@ left: 20px; top: -2px; color: #afafaf; text-align: left;font-weight: bold}
 #left_nav ul li.active a{background:#0468BE; }
 
 /* quick-menu */
-.container{position: relative;}
-.quick-menu {position: fixed; bottom: 10%;right: 60px;transform: translateY(-50%);background-color: #d4d4d4c3;padding: 20px;border-radius: 20px;transition: right  0.5s ease;}
-.quick-menu ul li {margin-bottom: 10px;}
+.container{ cursor: pointer;}
+.quick-menu{position: fixed; bottom: 10%;right: 3%;background-color: #d4d4d4c3;border-radius: 20px;transition: right  0.5s ease; background: url(../images/main/pajamas_location.svg) no-repeat center; width: 40px; height: 40px; background-color: #071D2F;;}
+.quick-menu:hover ul{opacity: 1;}
+.quick-menu ul {opacity: 0; transition: 0.5s;}
 .quick-menu ul li button,
 .quick-menu ul li a
-{cursor: pointer;display: block;border: none;width: 46px;height: 46px;border-radius: 50%;background-color: #071D2F;color: #fff;text-decoration: none;display: flex;justify-content: center;align-items: center;font-size: 12px;}
+{cursor: pointer;display: block;border: none;width: 40px;height: 40px;border-radius: 50%;background-color: #071D2F;color: #fff;text-decoration: none;display: flex;justify-content: center;align-items: center;font-size: 10px;}
+.quick-menu ul li button.right-menu{position: absolute;right: 160%;bottom: -70%;}
+.quick-menu ul li a.top{position: absolute;right: 120%;
+bottom: 45%;}
+.quick-menu ul li a.right-shop{position: absolute;     bottom: 140%;right: 45%;}
+.quick-menu ul li a.right-insta{position:absolute;left: 70%;bottom: 190%;}
 .sidebar.active {
   right: 0; /* 사이드바가 열릴 때 transition을 사용하여 오른쪽으로 이동하도록 설정 */
 }
